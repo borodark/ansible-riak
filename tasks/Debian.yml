@@ -30,7 +30,7 @@
   template: src=deb_repo.list.j2 dest=/etc/apt/sources.list.d/basho_riak.list owner=root group=root mode=0644
 
 - name: Install Riak for Debian
-  apt: name={{ riak_package }} state=present update_cache=yes
+  apt: state=present update_cache=yes deb={{ riak_package }}
   tags: Debian
 
 - name: Set the riak ulimit for Debian

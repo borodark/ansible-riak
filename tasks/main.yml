@@ -57,5 +57,5 @@
 - name: Bucket operations
   include: buckets.yml
 
-- name: Security operations
-  include: security.yml
+# - name: Security operations
+#   include: security.yml
