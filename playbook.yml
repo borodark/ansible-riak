@@ -1,0 +1,5 @@
+---
+- hosts: riak-cluster
+  sudo: true
+  roles:
+    - { role: ansible-riak }

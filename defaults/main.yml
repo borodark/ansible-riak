@@ -58,11 +58,11 @@ riak_scheduler:     noop
 # Create bucket types
 #
 riak_bucket_types:
-  - { name: counter,	     props: '{"props":{"datatype":"counter"}}' }
-  - { name: maps, 	     props: '{"props":{"datatype":"map"}}' }
-  - { name: sets, 	     props: '{"props":{"datatype":"set"}}' }
+  - { name: counter, props: '{"props":{"datatype":"counter"}}' }
+  - { name: maps, props: '{"props":{"datatype":"map"}}' }
+  - { name: sets, props: '{"props":{"datatype":"set"}}' }
   - { name: leveldb_backend, props: '{"props":{"backend":"leveldb"}}' }
-  - { name: memory_backend,  props: '{"props":{"backend":"memory_backend"}}' }
+  - { name: memory_backend, props: '{"props":{"backend":"memory_backend"}}' }
   - { name: bitcask_backend, props: '{"props":{"backend":"bitcask"}}' }
 
 # Create users
