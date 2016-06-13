@@ -15,10 +15,11 @@
   register: dist
 
 - name: Set up packagecloud install script
-  template: src=packagecloud_rpm.sh.j2 dest=/tmp/packagecloud_rpm.sh group=root mode=0755
+  template: src=packagecloud_rpm.sh.j2 dest=~/packagecloud_rpm.sh group=root mode=0755
 
 - name: Install package cloud repo if Riak is not already installed
-  command: '/tmp/packagecloud_rpm.sh'
+  command: '~/packagecloud_rpm.sh'
+  become:  
   tags: RedHat
   when: not dist.stat.exists
 
